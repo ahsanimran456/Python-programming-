@@ -1,0 +1,90 @@
+🔸 Jab tum Python ka code likhtay ho:
+python
+Copy
+Edit
+print("Hello World")
+Yeh simple lagta hai, lekin Python ke andar kaafi kuch hota hai is line ko run karne ke liye.
+
+🔁 Python Code Execution Process (Behind the Scenes)
+Step 1: Source Code (.py file)
+Tumne example.py file banayi aur usmein code likha:
+
+python
+Copy
+Edit
+print("Hello")
+Step 2: Python Interpreter (CPython)
+Jab tum python example.py likh kar run karte ho, toh:
+
+🔸 Tumhara code Python Interpreter ko diya jata hai (jaise CPython, jo sabse common Python interpreter hai).
+
+Step 3: Lexical Analysis (Tokenization)
+Interpreter tumhara code break karta hai into tokens:
+
+python
+Copy
+Edit
+print("Hello")
+Ye break hoga into:
+
+print (keyword/function)
+
+"Hello" (string)
+
+() (parentheses)
+
+Step 4: Parsing (Syntax Check)
+Ab Python check karega ke syntax sahi hai ya nahi.
+Agar koi galti ho jaaye (e.g., print "Hello" bina parentheses), toh SyntaxError aata hai.
+
+Step 5: Compilation to Bytecode
+Ab Python tumhare code ko compile karta hai into Bytecode.
+Ye ek low-level language hai jo Python Virtual Machine (PVM) samajh sakti hai.
+
+📦 Example:
+Tumhara code print("Hello") ban jaata hai kuch is tarah ka bytecode:
+
+bash
+Copy
+Edit
+LOAD_NAME                print
+LOAD_CONST               'Hello'
+CALL_FUNCTION            1
+Ye sab temporary .pyc file mein store hota hai (e.g., __pycache__/example.cpython-311.pyc)
+
+Step 6: PVM (Python Virtual Machine)
+Ye bytecode Python Virtual Machine ko diya jata hai.
+
+🧠 PVM ka kaam:
+
+Bytecode ko read karna
+
+Instructions ko step-by-step execute karna
+
+Memory allocate karna
+
+Output print karna
+
+🔹 Summary (Simple Form):
+Step	Kya Hota Hai?
+1	Code likhna .py file mein
+2	Interpreter use hota hai
+3	Code tokenize hota hai
+4	Syntax check hota hai
+5	Bytecode mein compile hota hai
+6	Bytecode PVM ke through execute hota hai
+
+🔍 Bytecode aur PVM Kya Hain?
+🔸 Bytecode:
+Machine code nahi hota
+
+Platform-independent hota hai
+
+Python Virtual Machine isko samajhti hai
+
+🔸 PVM:
+Python ka "engine" hai
+
+Bytecode ko execute karta hai
+
+Memory, variables, output sab handle karta hai
