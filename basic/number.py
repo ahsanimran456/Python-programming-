@@ -32,3 +32,18 @@ d = math.factorial(5)
 
 strip = "   Hello World   "
 # print(strip.strip())
+
+# format
+
+format = "Hello {name}, your balance is {balance}"
+# print(format.format(name="John", balance=1000))
+
+
+# list change to string
+
+list = ["apple", "banana", "cherry"]
+# print(" ".join(list))
+
+# raw 
+raw = "Hello \"World\" "
+print(raw)
